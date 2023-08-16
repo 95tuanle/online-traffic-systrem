@@ -20,7 +20,7 @@ public class UserController {
         this.userDao = userDao;
     }
 
-    @GetMapping(value="user/sign-up")
+    @GetMapping(value = "user/sign-up")
     public String signUp(Model model) {
         model.addAttribute("user", new User());
         return "user-sign-up";
