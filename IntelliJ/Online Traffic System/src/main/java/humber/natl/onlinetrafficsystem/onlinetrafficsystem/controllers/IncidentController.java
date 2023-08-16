@@ -21,7 +21,7 @@ public class IncidentController {
         this.userDao = userDao;
     }
 
-    @GetMapping(value="incident/index")
+    @GetMapping(value = "incident/index")
     public String index(Model model, @CookieValue(value = "email", defaultValue = "") String email) {
         if (email.equals("")) {
             return "redirect:/user/sign-in";

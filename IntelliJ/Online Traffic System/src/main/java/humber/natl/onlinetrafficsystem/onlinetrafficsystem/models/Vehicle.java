@@ -18,7 +18,6 @@ public class Vehicle {
     private String description;
 
 
-
     public Vehicle() {
     }
 

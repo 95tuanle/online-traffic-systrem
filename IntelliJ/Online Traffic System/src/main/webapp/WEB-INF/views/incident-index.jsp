@@ -45,13 +45,13 @@
         <th></th>
     </tr>
     <c:forEach items="${incidents}" var="incident">
-        <tr>
-            <td>${incident.id}</td>
-            <td>${incident.vehicle.plateNumber}</td>
-            <td>${incident.dateTime}</td>
-            <td>${incident.description}</td>
-            <td><a href="${incident.id}/delete">Delete</a></td>
-        </tr>
+    <tr>
+        <td>${incident.id}</td>
+        <td>${incident.vehicle.plateNumber}</td>
+        <td>${incident.dateTime}</td>
+        <td>${incident.description}</td>
+        <td><a href="${incident.id}/delete">Delete</a></td>
+    </tr>
     </c:forEach>
 </body>
 </html>

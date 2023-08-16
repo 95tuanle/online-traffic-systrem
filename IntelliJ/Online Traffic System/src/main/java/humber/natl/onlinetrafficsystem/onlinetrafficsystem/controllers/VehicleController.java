@@ -15,7 +15,7 @@ public class VehicleController {
         this.vehicleDao = vehicleDao;
     }
 
-    @GetMapping(value="vehicle/index")
+    @GetMapping(value = "vehicle/index")
     public String index(Model model, @CookieValue(value = "email", defaultValue = "") String email) {
         if (email.equals("")) {
             return "redirect:/user/sign-in";
